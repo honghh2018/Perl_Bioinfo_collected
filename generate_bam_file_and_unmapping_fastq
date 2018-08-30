@@ -1,0 +1,25 @@
+you need some bam file,unmapping clean data and mapping clean data,below command must be given.
+samtools and bedtools must be installed.
+so,let's begin.
+First and foremost,we should download the project genome.(NCBI,NR for example).
+$samtools faidx genome.fasta   
+use hisat2 generate sam file.
+$mkdir /home/hui/Result/L01 && cd /share/nas1/honghh/BBactrocera_dorsalis_Hendel/Result/L01 
+&& /home/software/hisat/2.0.4/hisat2 --dta -p 6 --rna-strandness RF -x 
+/home/hui/database/Bactrocera_dorsalis.ASM78921v2.genome   #this is prefix
+-1 /home/data/Bactrocera_H897-02-L01_good_1.fq -2 /home/data/Bactrocera_H897-02-L01_good_2.fq -S 
+/home/hui/Result/L01/L01.HISAT_aln.sam 
+>/home/hui/Result/L01/L01.log
+comment:use sh
+samtobam
+/home/hui/software/Bactrocera_dorsalis_Hendel/samtools-1.9/samtools view -bS 
+/home/hui/Bactrocera_dorsalis_Hendel/Result/L12/L12.HISAT_aln.sam 
+> /home/hui/Bactrocera_dorsalis_Hendel/Result/L12/L12.HISAT_aln.bam
+sortbam
+/samtools/0.1.18/samtools sort /Bactrocera_dorsalis_Hendel/Result/L05/L05.HISAT_aln.bam /Bactrocera_dorsalis_Hendel/Result/L05/L05.HISAT_aln_sort
+filter bam_pair unmapping genome:
+samtools view -bf 12 /Bactrocera_dorsalis_Hendel/Result/L01/L01.HISAT_aln_sort.bam >  #12 represent pair unmapping genome
+/Bactrocera_dorsalis_Hendel/Result/L01/L01.HISAT_aln_sort_filter_12.bam
+bamintofastq:
+bedtools bamtofastq -i L01.HISAT_aln_sort_filter_12.bam -fq L01.HISAT_aln_1.fastq -fq2 L01.HISAT_aln_2.fastq  #pair mate,if no， -fq will be fine.
+ 
