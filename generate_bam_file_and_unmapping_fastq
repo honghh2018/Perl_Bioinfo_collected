@@ -7,7 +7,7 @@ use hisat2 generate sam file.
 $mkdir /home/hui/Result/L01 && cd /share/nas1/honghh/BBactrocera_dorsalis_Hendel/Result/L01 
 && /home/software/hisat/2.0.4/hisat2 --dta -p 6 --rna-strandness RF -x 
 /home/hui/database/Bactrocera_dorsalis.ASM78921v2.genome   #this is prefix
--1 /home/data/Bactrocera_H897-02-L01_good_1.fq -2 /home/data/Bactrocera_H897-02-L01_good_2.fq -S 
+-1 /home/data/Bactrocera_1.fq -2 /home/data/Bactrocera_2.fq -S 
 /home/hui/Result/L01/L01.HISAT_aln.sam 
 >/home/hui/Result/L01/L01.log
 comment:use sh
