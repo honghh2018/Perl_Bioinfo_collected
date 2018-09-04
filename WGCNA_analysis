@@ -1,0 +1,29 @@
+WGCNA analysis needed two important files.All gene FPKM matrix file with certain samples must be given.sample trait matrix with every samples
+for example,trait file:  no biorepeat
+sampleID T01 T02 T03 T04 T05 T06
+T01      1    0   0   0   0    0
+T02      0    1   0   0   0    0
+T03      0    0   1   0   0    0
+T04      0    0   0   1   0    0
+T05      0    0   0   0    1   0
+T06      0    0   0   0    0   1
+
+if need biorepeat:T01,T02,T03 and T04,T05，T06 considering a group of three biorepeat
+sampleID T01_T02_T03 T04_T05_T06
+T01           1          0
+T02           1          0 
+T03           1          0
+T04           0          1
+T05           0          1
+T06           0          1
+
+if you have the trait related data,just input it 
+
+use perl scriptes invoking the R WGCNA packages to analyize the data.
+if you no the scripte,you can step by step to use R packages(WGCNA) to analyize.
+
+
+
+
+
+
