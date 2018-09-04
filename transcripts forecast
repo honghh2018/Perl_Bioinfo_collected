@@ -1,0 +1,5 @@
+use mRNA DEG intersection to extract the fasta file seq to forecast TF with use ITAK software.
+the command line very simple,just need fasta with DEG's gene ID.
+output file will list the TF classification in three files.
+
+comments:the output file including protein seq and the classification of TF.
