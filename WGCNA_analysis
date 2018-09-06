@@ -31,8 +31,9 @@ About WGCNA:
 WGCNA was used to coordination expression module predicated,which can choose  key(heart) gene in given modules.so the analysis to classify the
 gene with common　behavior help us quckly to distinguish the gene that we want.same as Kmeans-classification but its function enhanced.
 WGCNA can divide your fpkm of gene and forecast the module's heart gene,however,Kmeans method just classify your expression of genes.
-so we recommend WGCNA to analysis the different sample(time diff or disp diff).
+so we recommend WGCNA to analysis the different sample(time diff or disp diff),and the DEG intersection and union would be fine.
 additionally,we must be realized that the amount of samples should exceed 5 sample,20 would be best.
+
 
 
 
