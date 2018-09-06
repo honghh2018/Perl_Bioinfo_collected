@@ -21,6 +21,19 @@ if you have the trait related data,just input it
 
 use perl scriptes invoking the R WGCNA packages to analyize the data.
 if you no the scripte,you can step by step to use R packages(WGCNA) to analyize.
+comments:
+Weighted Gene Coexpression Network Analysis(WGCNA) have cutoff for the counts of gene set,which should be less than about 10000 genes.
+In　case your gene set exceeded(outnumber) 10000 genes,software would be crash and exit,so,on this condition,the gene set must be under 10000.
+The most significant was the annotation'file must be given,and the cuoff of fpkm must be set and filtered.
+in case,we done those work above,we could start the analyize.(the annotation file ofen in workflow result)
+
+About WGCNA:
+WGCNA was used to coordination expression module predicated,which can choose  key(heart) gene in given modules.so the analysis to classify the
+gene with common　behavior help us quckly to distinguish the gene that we want.same as Kmeans-classification but its function enhanced.
+WGCNA can divide your fpkm of gene and forecast the module's heart gene,however,Kmeans method just classify your expression of genes.
+so we recommend WGCNA to analysis the different sample(time diff or disp diff).
+additionally,we must be realized that the amount of samples should exceed 5 sample,20 would be best.
+
 
 
 
