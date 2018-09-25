@@ -1,7 +1,7 @@
 when you want to mapping some file no blast,for example fq type file,you should download hisat2 software.
 you should try below command
 first and foremost,you should found the genome file,fa type file.
-then you use:$hisat2-build -p 10 file.fa file<prefix> build database.
+then you use:$hisat2-build -p 10 file.fa file<prefix> build database. #must be fa file to build the database
 then you copy you query seq file,for instance,fastq type file.
 hisat2 -p 10 -x <database_genome prefix> -1 a.fastq -2 b.fastq -S test.sam &>mapping.log #　-S output file sam　type,and log　file
 comment:-p thread counts.
