@@ -1,0 +1,14 @@
+
+
+
+Take browse fill with https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software and enter
+chose the platform and download the sra_toolkit:
+Ubuntu Linux 64 bit architecture for example.
+$tar zxf sratoolkit.2.9.2-ubuntu64.tar.gz
+$cd bin  #you can see the binary APP
+#USAGE:
+$fasterq-dump SRR########　-o /output/dir    #download the sra data and split into paired fq
+#USAGE:
+$vdb-dump --info SRR7959012  #check the run of ncbi submit information
+
+
