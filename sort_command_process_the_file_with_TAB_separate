@@ -1,0 +1,2 @@
+cat result.list |sort -t $'\t' -k 24n|head -2 >result_reference_gene.list
+comment:when that file separated with TAB, the above command with "$"　must be taken.
