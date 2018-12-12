@@ -1,0 +1,9 @@
+As you need download amounts of data in ncbi with sra, you better use the aspera software with linux command show below.
+[path_to_ascp_binary]/ascp -i [path_to_Aspera_key]/asperaweb_id_dsa.openssh -k 1 –T -l200m anonftp@ftp.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/SRR304/SRR304976/SRR304976.sra [local_target_directory]
+the key file in the software aspera directory etc/.
+
+
+
+
+
+
