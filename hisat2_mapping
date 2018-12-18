@@ -5,7 +5,9 @@ then you use:$hisat2-build -p 10 file.fa file<prefix> build database. #must be f
 On lower version hisat-build,not the thread parameter,just use the line command $hisat-build .fa filename<prefix> done
 then you copy you query seq file,for instance,fastq type file.
 hisat2 -p 10 -x <database_genome prefix> -1 a.fastq -2 b.fastq -S test.sam &>mapping.log #　-S output file sam　type,and log　file
-comment:the prefix not comprehend .fa like the string "Nosema_bombycis_CQ1.NosBomCQ1_v1.0.genome" not including the "Nosema_bombycis_CQ1.NosBomCQ1_v1.0.genome.fa"
+comment:the prefix not comprehend ".fa" like the string "Nosema_bombycis_CQ1.NosBomCQ1_v1.0.genome" not including the "Nosema_bombycis_CQ1.NosBomCQ1_v1.0.genome.fa"
+
+
 comment:-p thread counts.
 the mapping rate on the log file.
 overall aligned rate:.....94.44%
