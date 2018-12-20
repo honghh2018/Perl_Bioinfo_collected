@@ -1,0 +1,2 @@
+use perl to modify amount of filename,the command show below:
+$ls |perl -ne 'chomp $_;if($_=~/(.*).new/){print "mv $_ $1\n"}' |sh
