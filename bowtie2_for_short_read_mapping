@@ -1,5 +1,5 @@
 Short sequence mapping tools bowtie2 token in read mapping analysis,the command show below:
 Firstly, you shoul build the genome database whose was same orgnism for mapping reads
 
-$bowtie2-build genome_seq.fa prefix_database_name   #need about 1~2 hours to process
+$bowtie2-build <genome_seq.fa> <prefix_database_name>   #need about 1~2 hours to process
 
