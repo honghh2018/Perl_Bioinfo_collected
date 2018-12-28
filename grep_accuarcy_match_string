@@ -1,0 +1,8 @@
+Command line operate the string that need accuarate string on Linux operation system,so the below command grep -w should be taoken.
+
+$for i in `cat file1.txt |cut -f1`;do cat file2.txt |grep -w "$i" ;done >new.txt
+
+
+
+
+
