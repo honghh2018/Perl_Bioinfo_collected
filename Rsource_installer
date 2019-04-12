@@ -33,6 +33,9 @@ configure: WARNING: you cannot build PDF versions of the R manuals
 configure: WARNING: you cannot build PDF versions of vignettes and help pages
 whereas,R can be buit in the end of here.
 java shoud be install first when R software install.
+performing https://www.java.com/en/download/manual.jsp to choose jdk that your
+system want.
+
 type command:sudo make &&make install to install R
 
 
