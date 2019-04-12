@@ -1,0 +1,39 @@
+first of all opening wbesit:https://mirrors.tuna.tsinghua.edu.cn/CRAN/,which is tsinghua mirror services have downloaded tgz packages like
+'R-3.5.3.tar.gz'.
+moreover,tar zxf R-3.5.3.tar.gz &&cd R-3.5.3 &&less INSTALL && type q to quit 
+meanwhile,sudo ./configure
+error:No F77 compiler found
+your system lost the gftran compiler,since error come out like above.then you take command string like 'sudo apt-get install gftran'
+-Y to install this component.
+type ./configure again
+error:--with-readline=yes (default) and headers/libs are not available 
+when error readline happen,type sudo ./configure --with-readline=no error continuced followed:
+(default) and X11 headers/libs are not available,when it happen, try command-sudo ./configure --with-readline=no --with-x=no-
+configure will pass but having warings or no.when error -bzip2 library and headers are required-emerged/appeared.type website below
+open https://sourceforge.net/projects/bzip2/files/latest/download and download bzip2-1.0.6.tar.gz.
+then,decompress bzip2-1.0.6.tar.gz &&cd bzip2-1.0.6 &&sudo make &&sudo make install.as you are paranoid and want to observe the
+procedure of what 'make install' is going to do you can first do make -n install.
+
+when up jobs over,the error-liblzma library and headers are required-spilling out.
+download file:https://sourceforge.net/projects/lzmautils/files/xz-5.2.2.tar.gz/download and install it
+add sudo prefix for installing files into /usr directories.
+ever since above work finished,happen again:error: pcre >= 8.20 library and headers are required.
+download:ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz
+tar zxf pcre-8.38.tar.gz &&cd pcre-8.38 &&sudo ./configure && sudo make &&sudo make install.
+and wrong also appeared:PCRE version >= 8.20, < 10.0 and has UTF-8 support... no.that mean encoded uncorrect.
+using command line:cd pcre-8.38 &&sudo ./configure --enable-utf8 &&sudo make &&sudo make install.
+
+then,failure open out:error: libcurl >= 7.22.0 library and headers are required with support for https
+download:https://curl.haxx.se/download/curl-7.47.1.tar.gz &&tar zxf tar.gz &&cd curl-7.47.1 and https://curl.haxx.se/download/ website
+have newest curl version,if you want to download latest edition，take step into https://curl.haxx.se/download/ web.
+tar zxf curl-7.47.1.tar.gz &&cd curl-7.47.1 && sudo ./configure && sudo make &&sudo make install
+eventually,the command within R install directory display warnings:
+configure: WARNING: you cannot build info or HTML versions of the R manuals
+configure: WARNING: you cannot build PDF versions of the R manuals
+configure: WARNING: you cannot build PDF versions of vignettes and help pages
+whereas,R can be buit in the end of here.
+java shoud be install first when R software install.
+type command:sudo make &&make install to install R
+
+
+
