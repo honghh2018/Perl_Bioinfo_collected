@@ -1,0 +1,47 @@
+Dear submitter,
+
+It appears that you are trying to submit to GEO, but you have already uploaded
+raw data to SRA. You do not have to resubmit the raw data to GEO, but you will
+have to upload a metadata template and processed data files to GEO. Please use
+the instructions appended below. You will need to include the SRA accessions
+in your GEO submission.
+
+Let us know if you have any questions.
+
+Sincerely,
+The GEO Team
+*************
+
+Instructions for submitting sequencing data to GEO are here:
+https://www.ncbi.nlm.nih.gov/geo/info/seq.html
+
+You do not need to re-submit the raw data files. Instead, please include
+additional 
+information in the Metadata template
+(https://www.ncbi.nlm.nih.gov/geo/info/examples/seq_template_v2.1.xls) as follows:
+
+[1] Reference the SRA Study accession (SRPnnnn) and BioProject accession
+(PRJNAnnnn) in the SERIES 'Overall design' field.
+
+[2] In the 'raw file' column of the SAMPLES section, please list the
+corresponding SRA Experiment accessions (SRXnnnnnn) so that we can create the
+appropriate links between the SRA Experiments and GEO Samples.
+
+[3] Add a 'BioSample' column to the SAMPLES section and include the
+corresponding BioSample accessions (SAMNnnnnnn).
+
+[4] Add an 'instrument model' column to the SAMPLES section and indicate the
+instrument model that was used for sequencing.
+
+You do not need to fill in the 'RAW FILES' or 'PAIRED-END EXPERIMENTS' sections.
+
+Please upload the Metadata template and processed data files to GEO.
+FTP instructions for depositing sequencing data to GEO are here:
+https://www.ncbi.nlm.nih.gov/geo/info/seq.html#data
+
+Please let us know if we can be of further assistance. 
+
+We look forward to receiving your upload notification.
+
+Regards,
+The GEO Team
