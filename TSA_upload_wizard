@@ -12,6 +12,7 @@ what's more significant, you should upload your fa file at step 3 that chose fas
 In addtion, copy the fasta file that you were going to submit to TSA to the directory.
 execute the command linux64.tbl2asn -t template.sbt -i Citrus_limon_filter1.fa -w assembly.cmt -M t -n "Citrus limon" in your linux
  terminal bash to generate the .sqn file to submit.
+ comment:the error must be identify with software linux64.tbl2asn running over.
  
  when all mission above finished,you should try TSA portal to step three that selected ASN file to submit the sqn file.
  
