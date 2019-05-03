@@ -7,7 +7,7 @@ https://www.ncbi.nlm.nih.gov/WebSub/template.cgi download  template.sbt
 ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/ download the latest version for command-line that generated 
 .sqn file. 64 must be better. Please try linux64.tbl2asn --help to look for helps.
 what's more significant, you should upload your fa file at step 3 that chose fasta button of TSA. Afterward, in the light of the error for 
-NCBI provided to filter the wrong sequence using perl scrits. The error included adapter/N-ends/contamination sequence and trim sequences.
+NCBI provided to filter the wrong sequence using perl scripts. The error included adapter/N-ends/contamination sequence and trim sequences.
 .the step of this error indicated you should note was the order across NCBI's error provided.firstly the error of adapter and N-ends
 must be token place in the first place.when it achieved, next step for information filled and submission.
 As all above work done,the status of projection submitted accession was showed at the table,if its Queued meant mid processing.
