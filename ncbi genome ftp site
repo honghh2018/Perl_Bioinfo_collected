@@ -1,2 +1,6 @@
 For refseq, the genome and annotation file in gff3 format can be found at entrze database ftp of refseq genomes.
 ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/
+
+For example, the human genomes and annotation file locate at the subdirectory vertebrate_mammalian/Homo_sapiens/all_assembly_versions/GCF_000001405.31_GRCh38.p5. GCF_000001405.31_GRCh38.p5 
+and this files are latest version in this directory. 
+
