@@ -15,5 +15,15 @@ make ebseq
 cd ..
 cd ..
 
-
-
+Usage:
+Step1,building reference from unigene fa or genome fa showed below:
+/opt/biosoft/rsem/current/rsem-prepare-reference All_gene.fa test --bowtie note:test for prefix of file,inputed file was All_gene.fa
+attention:--bowtie parameter must be given.
+Result files:
+All_gene.fa  test.1.ebwt  test.3.ebwt  test.grp     test.n2g.idx.fa  test.rev.2.ebwt  test.ti
+run.sh       test.2.ebwt  test.4.ebwt  test.idx.fa  test.rev.1.ebwt  test.seq         test.transcripts.fa
+/opt/biosoft/rsem/current/rsem-calculate-expression --paired-end T01_good_1.fq T01_good_2.fq ../fa_file/test samplename note:prefix of samplename
+Result file:
+T01_good_1.fq  nohup.out  samplename.genes.results     samplename.stat            samplename.transcript.sorted.bam
+T01_good_2.fq  run.sh     samplename.isoforms.results  samplename.transcript.bam  samplename.transcript.sorted.bam.bai
+result from samplename.genes.results file
